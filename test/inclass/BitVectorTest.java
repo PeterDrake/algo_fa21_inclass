@@ -26,4 +26,11 @@ class BitVectorTest {
         v.unset(7);
         assertFalse(v.get(7));
     }
+
+    @Test
+    void unsetsAlreadyUnsetBit() {
+        BitVector v = new BitVector();
+        v.unset(3);
+        assertFalse(v.get(3));
+    }
 }

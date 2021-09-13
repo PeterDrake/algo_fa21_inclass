@@ -13,6 +13,7 @@ public class BitVector {
     }
 
     public void unset(int i) {
-
+        data = data & ~(1 << i);
     }
+
 }
