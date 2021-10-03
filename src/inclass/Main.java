@@ -5,7 +5,8 @@ import edu.princeton.cs.algs4.*;
 public class Main {
 
     public static void main(String[] args) {
-        StdOut.println("Hello");
+        LinkedStack<String> s = new LinkedStack<String>();
+        s.push("five");
     }
 
     public int twice(int n) {
