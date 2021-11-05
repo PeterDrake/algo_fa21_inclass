@@ -105,9 +105,14 @@ public class PathCompression {
      */
     public int find(int p) {
         validate(p);
-        while (p != parent[p])
-            p = parent[p];
-        return p;
+//        int original = p;
+//        while (p != parent[p])
+//            p = parent[p];
+//        parent[original] = p;
+        if (p != parent[p]) {
+            parent[p] = find(parent[p]);
+        }
+        return parent[p];
     }
 
     /**

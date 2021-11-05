@@ -39,7 +39,7 @@ public class Fibo {
     }
 
     public static void main(String[] args) {
-        System.out.println(arrayFibo(46));
+        System.out.println(arrayFibo(22));
     }
 
 }
